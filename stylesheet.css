@@ -1,0 +1,68 @@
+body{
+    background-color:#f1ecec; 
+}
+h1{
+    font-size: 20px;
+    text-align: center; 
+    margin:0;
+    padding-top: 10px; 
+}
+li{
+    height: 50px;
+    width: 900px; 
+    background-color:#f8ff9d;
+    margin: 10px ;
+    visibility: hidden;
+    
+}
+ol{
+    padding: 15px 10px; 
+}
+.wrapper{
+    width: 1000px;
+    margin: 0 auto; 
+    background-color:#e6e5e5; 
+}
+.menu {
+    margin: 0 auto;
+    padding: 0;
+    width: 950px; 
+    height: 100px; 
+}
+
+.task { 
+    height: 40px;
+    width: 900px; 
+    padding: 5px 5px; 
+    float: left;
+}
+#bt_add{
+    margin: 15px 5px; 
+    height: 30px;
+    width: 80px;
+    text-align: center; 
+    font-size: 15px;
+}
+#it_1{
+    margin:0;
+    height: 30px; 
+    text-align: center; 
+}
+
+.add_task {
+    display: inline;
+}
+
+.description {
+    display: inline; 
+    width: 800px; 
+    padding: 5px 5px; 
+}
+
+.content {
+    margin: 0 auto;
+    padding: 0;
+    width: 950px;
+    height: 800px;
+    background-color:#f9f5f5; 
+}

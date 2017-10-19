@@ -38,9 +38,9 @@ ol{
 #bt_add{
     margin: 15px 5px; 
     height: 30px;
-    width: 80px;
     text-align: center; 
     font-size: 15px;
+    min-width: 100px; 
 }
 #it_1{
     margin:0;

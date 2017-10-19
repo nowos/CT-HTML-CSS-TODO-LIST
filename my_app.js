@@ -1,47 +1,40 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-var description;
-var licznik = 1;
+    var description;
+    var licznik = 1;
 
 // po naciśnięciu przycisku Add:  
-    $('#bt_add').click(function(){
+    $('#bt_add').click(function () {
 //zmienna description przyjmuje wartość pola input    
-    description = $('#it_1').val();
+        description = $('#it_1').val();
 //tworzenie zmiennej element 
-    
-    element = $('<li>');
-              
- //wprowadź tekst z pola wprowadzania tekstu  
-    element.text(description); 
-    $('ol').append(element);
-   
- }); //end of add task
- 
- 
- //function handler(event) {
- //   event.target
- 
+        element = $('<li>');
+        
+        //wprowadź tekst z pola wprowadzania tekstu  
+        element.text(description);
+        $('ol').append(element);
+
+    }); //end of add task
+
 //edycja zadania
-    $('li').click(function(){
-        //nowa wartośc description
-      description = $('#it_1').val();
-      (this).text(description);
+    $('ol').click(function (event) {
+        description = $('#it_1').val();
+        $(event.target).text(description);
 
     });
-    
+
 // usunięcie zadania
-    $('li').dblclick(function(){
-       //nowa wartośc description
-     $(this).hide();
 
+    $('ol').dblclick(function (event) {
+        $(event.target).remove();
     });
 
-     
+
 });//end of main f-ction
 
 
 
-    
+
 
 
 
